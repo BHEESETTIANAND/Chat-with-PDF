@@ -17,7 +17,7 @@ from dotenv import load_dotenv
 # load_dotenv()
 # os.getenv("google_api_key")
 google_api_key="AIzaSyCQkA1lprriuC6cXrEYd16le5d-XdjfVXU"
-genai.configure(api_key=os.getenv("google_api_key"))
+genai.configure(api_key=google_api_key)
 
 
 # to get text from the given file
