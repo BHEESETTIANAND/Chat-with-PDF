@@ -1,3 +1,7 @@
+
+
+
+
 # loading all the necessary libraries
 
 import streamlit as st
@@ -14,11 +18,9 @@ from dotenv import load_dotenv
 
 
 # loading the api key's from the .env file
-# load_dotenv()
-# os.getenv("google_api_key")
-google_api_key="AIzaSyCQkA1lprriuC6cXrEYd16le5d-XdjfVXU"
-genai.configure(api_key=google_api_key)
-
+load_dotenv()
+os.getenv("google_api_key")
+genai.configure(api_key=os.getenv("google_api_key"))
 
 # to get text from the given file
 def get_pdf_text(pdf_docs):
@@ -119,7 +121,5 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
 
 
